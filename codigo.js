@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Obtén el botón y agrega un listener para el evento 'click'
     var boton = document.getElementById('encriptador');
+    var boton2 = document.getElementById('desencriptador');
     
     
     boton.addEventListener('click', function() {
@@ -35,5 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    boton2.addEventListener('click', function(){
+        
+        var textoIn = document.getElementById('texto1').value;
+        textoDes=textoIn
+        .replace(/ufat/g, 'u')
+        .replace(/ober/g, 'o')
+        .replace(/imes/g, 'i')
+        .replace(/enter/g, 'e')
+        .replace(/ai/g, 'a');
+
+         document.getElementById('texto2').value = textoDes
+    })
    
 });
