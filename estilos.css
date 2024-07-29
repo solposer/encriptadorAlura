@@ -33,7 +33,7 @@ h5{
     flex-flow:column;
     grid-column: 3/4;
 }
-img{
+#logo{
     height:50px;
 }
 footer{
@@ -58,6 +58,8 @@ footer{
 }
 #copiador,#encriptador,#desencriptador{
     background-color: rgb(79, 105, 97);
+    height: 30px;
+    cursor:pointer;
 }
 #desencriptador:hover{
     background-color: aquamarine;
@@ -82,3 +84,22 @@ textarea{
     background-color: rgba(165, 42, 42, 0.63);
     color:antiquewhite
 }
+@media (max-width: 500px) {
+    h1{
+        font-size: 20px;
+    }
+#logo{
+    max-width: 60px;
+    
+}
+.contenido{
+    display:flex;
+    flex-direction: column;
+}
+.dos{
+    align-items: center;
+}
+#texto1{
+    min-width: 100%;
+}
+  }
