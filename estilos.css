@@ -1,15 +1,20 @@
 body{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(fondoGato.png);
+    background-size: cover
 }
 main{
     display: flex;
-    background-color: rgb(214, 197, 211);
+    background-color: rgba(214, 197, 211, 0.404);
     flex-flow: row wrap;
     width: 100%;
     align-items: center;
 }
 h1{
     vertical-align: middle;
+}
+h5{
+    color:antiquewhite
 }
 .contenido{
     display:grid;
@@ -39,7 +44,7 @@ footer{
     height: 30px;
     display: flex;
     align-items: center;
-    background-color: rgb(220, 220, 243);
+    background-color: rgba(85, 71, 110, 0.575);
     p{
         text-align: center;
         width: 100%;
@@ -51,7 +56,18 @@ footer{
 .copiarBoton{
     width:60px;
 }
-
+#copiador,#encriptador,#desencriptador{
+    background-color: rgb(79, 105, 97);
+}
+#desencriptador:hover{
+    background-color: aquamarine;
+}
+#encriptador:hover{
+    background-color: aquamarine;
+}
+#copiador:hover{
+    background-color: aquamarine;
+}
 textarea{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -61,4 +77,8 @@ textarea{
     z-index: 1;
     width:270px;
     height:500px
+}
+textarea{
+    background-color: rgba(165, 42, 42, 0.63);
+    color:antiquewhite
 }
