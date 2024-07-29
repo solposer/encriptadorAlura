@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var boton = document.getElementById('encriptador');
     var boton2 = document.getElementById('desencriptador');
     var copiador = document.getElementById('copiador');
+    var outputText=document.getElementById('texto2');
+    var placeholderImage = document.getElementById('placeholderImage');
+    outputText.style.display='none';
+    placeholderImage.style.display='block';
+    copiador.style.display='none';
+   
     
     boton.addEventListener('click', function() {
         // Obtén el valor del <textarea> usando su ID
