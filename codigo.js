@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Obtén el botón y agrega un listener para el evento 'click'
     var boton = document.getElementById('encriptador');
     var boton2 = document.getElementById('desencriptador');
-    
+    var copiador = document.getElementById('copiador');
     
     boton.addEventListener('click', function() {
         // Obtén el valor del <textarea> usando su ID
@@ -49,4 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
          document.getElementById('texto2').value = textoDes
     })
    
+    copiador.addEventListener('click',function(){
+        var textarea=document.getElementById('texto2')
+        textarea.select();
+        textarea.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+    })
 });
